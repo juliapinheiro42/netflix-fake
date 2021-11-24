@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/netflix_interface/style/main.css">
+    
+    <title> Netflix Clone</title>
+</head>
+<body>
+      <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid">
+          <a class="logo" href="#">Netflix</a>
+          <button class="navbar-toggler btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler bg-danger">navegar
+                <i class="bi bi-caret-down-fill"></i> 
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active bg-light" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link bg-light " href="#">Séries</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link bg-light " href="#" id="navbarDropdown" >
+                    Filmes
+                </a>
+               
+              </li>
+              <li class="nav-item">
+                <a class="nav-link bg-light">Bombando</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link bg-light">Minha lista</a>
+              </li>
+              <a class="nav-link bg-light">Assista de novo</a>
+            </li>
+            </ul>
+            <form class="d-flex">
+                <button class="btn btn-success" type="submit">
+                    <i class="bi bi-search"></i>
+                <button class="btn btn-success" type="submit">
+                    <i class="bi bi-bell-fill"></i>
+              <button class="btn btn-success" type="submit">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img style="width: 35px;
+                        border-radius: 3px;"src="/netflix_interface/img/perfisnetflix.jpg">
+                    </a>
+                    <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">
+                        <img style="width: 30px;
+                        border-radius: 3px;"src="/netflix_interface/img/mais perfil.jpg">
+                      </a></li>
+                      <li><a class="dropdown-item" href="#">Gerenciar perfis</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Conta</a></li>
+                      <li><a class="dropdown-item" href="#">Centro de Ajuda</a></li>
+                      <li><a class="dropdown-item" href="#">Sair da Netflix</a></li>
+                    </ul>
+                  </li>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav> 
+      </header>
+       <section class="ghost"></section>
+  <main>
+    <div class="filme-principal">
+        <div class="container">
+            <img src="/netflix_interface/img/arcane-logo.png" class="arcane"/>
+            <h3 class="descricao d-none d-lg-block">Em meio ao conflito entre as cidades-gêmeas de Piltover e Zaun,<br/> duas irmãs lutam em lados opostos de uma guerra entre tecnologias <br/>mágicas e convicções incompatíveis.</h3>
+            <div class="botoes d-none d-xl-block">
+                <button rolen= "button" class="assistir">
+                    <i  class="bi bi-caret-right-fill"></i>
+                    Assistir
+                </button>
+                <button rolen= "button" class="info">
+                    <i class="bi bi-info-circle"></i>
+                    Mais informações
+                </button>
+        </div>
+        </div>
+
+    </div>
+    </div>
+  </main>
+  <div class="pop">
+    <h4>Populares na Netflix</h4>
+    <button class="invisivel">
+        <span class="ver">ver tudo</span>
+        <i class="bi bi-arrow-right-short"></i>
+    </button>
+  </div>
+  <div class="carousel">
+    <div id="carousel01"  class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel01" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#carousel01" data-bs-slide-to="1"></button>
+        </div>
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+        
+            <img  src="/netflix_interface/img/Venom.jpg" alt="Venom" class="w-20">
+            <img  src="/netflix_interface/img/round 6.jpg" alt="Round 6" class="w-20">
+            <img  src="/netflix_interface/img/la casa de papel.jpg" alt="La casa de Papel" class="w-20 d-none d-md-inline-block">
+            <img  src="/netflix_interface/img/peaky blinders.jpg" alt="Peaky Blinders" class="w-20  d-none d-lg-inline-block">
+            <img  src="/netflix_interface/img/Rick and Morty.jpg" alt="Rick and Morty" class="w-20 d-none d-xl-inline-block  ">
+            <img  src="/netflix_interface/img/spider.jpg" alt="Spiderman Homecoming" class="w-20 d-none d-xl-inline-block">
+        </div>
+        <div class="carousel-item ">
+            <img  src="/netflix_interface/img/big mouth.jpg" alt="Big Mouth" class="w-20">
+            <img src="/netflix_interface/img/you.jpg" alt="you" class="w-20" >
+            <img src="/netflix_interface/img/c.bebop.jpg" alt="Cowboy Bebop" class="w-20  d-none d-md-inline-block" >
+            <img  src="/netflix_interface/img/lucifer.jpg" alt="Lúcifer" class="w-20  d-none d-lg-inline-block">
+            <img  src="/netflix_interface/img/tick.jpg" alt="Tick tick ... BOOM" class="w-20 d-none d-xl-inline-block">
+            <img src="/netflix_interface/img/bb-9.jpg" alt="Brooklyn-99" class="w-20 d-none d-xl-inline-block">   
+        </div>
+      </div class="buttons">
+      <button class="carousel-control-prev" data-bs-target="#carousel01" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+      <button class="carousel-control-next" data-bs-target="#carousel01" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+      </div>
+      <!--Js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="/netflix_interface/js/script.js"></script>
+</body>
+</html>
